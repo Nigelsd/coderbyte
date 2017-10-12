@@ -13,7 +13,7 @@ Description:
 
 
 def ScaleBalancing(strArr):
-    strArr = 'not possible'
+
     if len(strArr) != 2: return 'not possible'
 
     mainArr = [int(x) for x in strArr[0][1:-1].split(",")]
@@ -24,7 +24,7 @@ def ScaleBalancing(strArr):
 
     dif = abs(_x - _y)
     if dif in weightArr: return dif
-
+    strArr = 'not possible'
     length = len(weightArr)
     for i in xrange(0, length):
         for j in xrange(0, i):
